@@ -1,5 +1,9 @@
-from Calculator.Subtraction import subtraction
-from Calculator.Addition import addition
+from Addition import addition
+from Division import division
+from Multipule import mul
+from Subtraction import subtraction
+from Suqare import sq
+from Suqare_root import sqr
 
 
 class Calculator:
@@ -14,4 +18,20 @@ class Calculator:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def division(self, a, b):
+        self.result = division(a, b)
+        return self.result
+
+    def mul(self, a, b):
+        self.result = mul(a, b)
+        return self.result
+
+    def sq(self, a):
+        self.result = sq(a)
+        return self.result
+
+    def sqr(self, a):
+        self.result = sqr(a)
         return self.result
