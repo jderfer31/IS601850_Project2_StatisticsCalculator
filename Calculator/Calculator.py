@@ -2,8 +2,8 @@ from Addition import addition
 from Division import division
 from Multipule import mul
 from Subtraction import subtraction
-from Suqare import sq
-from Suqare_root import sqr
+from Square import sq
+from Square_root import sqr
 
 
 class Calculator:
