@@ -17,7 +17,9 @@ class MyTestCase(unittest.TestCase):
     def test_mean_calculator(self):
         mean = self.statistics.mean(self.testData)
         self.assertEqual(mean, 4.25)
-
+    # def test_median_calculator(self):
+    #     median = self.statistics.median(self.testData)
+    #     self.assertEqual(median, 4.25)
 
 if __name__ == '__main__':
     unittest.main()
