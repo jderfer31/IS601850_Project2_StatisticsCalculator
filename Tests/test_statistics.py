@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         seed(5)
         self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
-
+        self.x = 1
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
@@ -33,6 +33,10 @@ class MyTestCase(unittest.TestCase):
     def test_stddev_calculator(self):
         stddev = self.statistics.stddev(self.testData)
         self.assertEqual(stddev, 2.64575131)
+
+    def test_zscore_calculator(self):
+        zscore = self.statistics.zscore(self.testData, self.x)
+        self.assertEqual(zscore, -1.5)
 
 if __name__ == '__main__':
     unittest.main()
