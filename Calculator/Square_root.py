@@ -1,2 +1,2 @@
 def sqr(a):
-    return int(a)**(1/2)
+    return round(int(a) ** (1 / 2), 8)
