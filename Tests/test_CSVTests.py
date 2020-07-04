@@ -1,5 +1,5 @@
 import unittest
-from CsvReader import CsvReader
+from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 from pathlib import Path
 
@@ -14,7 +14,7 @@ class MyTestCase(unittest.TestCase):
         self.csv_reader = CsvReader('Tests/Data/subtraction.csv')
 
     def test_return_data_as_objects(self):
-        data = self.csv_reader.return_data_as_objects('value1')
+        data = self.csv_reader.return_data_as_class('value1')
         self.assertIsInstance(data, list)
         test_data = ClassFactory('value1', self.csv_reader.data[0])
 
