@@ -8,3 +8,4 @@ def mode(data):
     max_count = max(dict.values())
     mode = [k for k, v in dict.items() if v == max_count]
     return mode
+
