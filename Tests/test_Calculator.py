@@ -33,8 +33,8 @@ class MyTestCase(unittest.TestCase):
     def test_divide_method_calculator(self):
         test_data_divide = CsvReader('Tests/Data/Division.csv').data
         for row in test_data_divide:
-            self.assertEqual(self.calculator.division(row['Value 1'], row['Value 2']), float(row['Result']))
-            self.assertEqual(self.calculator.result, float(row['Result']))
+            self.assertEqual(round(self.calculator.division(row['Value 1'], row['Value 2']),2), round(float(row['Result']),2))
+            self.assertEqual(round(self.calculator.result,2), round(float(row['Result']),2))
 
     def test_square_method_calculator(self):
         test_data_square = CsvReader('Tests/Data/Square.csv').data
@@ -45,8 +45,8 @@ class MyTestCase(unittest.TestCase):
     def test_square_root_method_calculator(self):
         test_data_square_root = CsvReader('Tests/Data/Square Root.csv').data
         for row in test_data_square_root:
-            self.assertEqual(self.calculator.sqr(row['Value 1']), round(float(row['Result']), 8))
-            self.assertEqual(self.calculator.result, round(float(row['Result']), 8))
+            self.assertEqual(round(self.calculator.sqr(row['Value 1']),2), round(float(row['Result']), 2))
+            self.assertEqual(round(self.calculator.result,2), round(float(row['Result']), 2))
 
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)
