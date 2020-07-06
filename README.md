@@ -8,6 +8,8 @@ Contributors: Payal Kevin Bhalala, Chinghao Sun and Jeremy Langenderfer
 [ChinghaoSun_TaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/ChinghaoSun_TaskList.md)
 
 # Basic Math Functions
+[BasicMathFunctions](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/tree/master/Calculator)  
+
   1. Addition
   2. Subtraction
   3. Multiplication
@@ -16,6 +18,8 @@ Contributors: Payal Kevin Bhalala, Chinghao Sun and Jeremy Langenderfer
   6. Square root
   
  # Statistics Functions
+ [StatisticsFunctions](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/tree/master/Statistics)
+ 
   1. Mean
   2. Median
   3. Mode
