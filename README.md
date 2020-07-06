@@ -3,7 +3,7 @@
 Contributors: Payal Kevin Bhalala, Chinghao Sun and Jeremy Langenderfer
 
 # Links to Contributor Assigned Tasks
-[JeremyTaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/JeremyTaskList.md)
+[Jeremy_TaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/JeremyTaskList.md)
 
 # Basic Math Functions
   1. Addition
