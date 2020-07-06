@@ -1,3 +1,5 @@
+# Assigned Tasks to Chinghao Sun
+
 # Population Sampling functions
   1. Simple random sampling
   2. Confidence Interval For a Sample
