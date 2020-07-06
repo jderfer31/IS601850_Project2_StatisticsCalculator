@@ -1,2 +1,3 @@
 def sq(a):
-    return int(a) ** 2
+    return float(a) ** 2
+
