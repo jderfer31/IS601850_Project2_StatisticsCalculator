@@ -3,7 +3,9 @@
 Contributors: Payal Kevin Bhalala, Chinghao Sun and Jeremy Langenderfer
 
 # Links to Contributor Assigned Tasks
-[Jeremy_TaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/Jeremy_TaskList.md)
+[Jeremy_TaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/Jeremy_TaskList.md)  
+[PayalKevinBhalala_TaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/PayalKevinBhalala_TaskList.md)  
+[ChinghaoSun_TaskList](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/blob/master/ContributorTasks/ChinghaoSun_TaskList.md)
 
 # Basic Math Functions
   1. Addition
