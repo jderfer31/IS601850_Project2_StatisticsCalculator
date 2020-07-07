@@ -1,21 +1,17 @@
 import random
-
-my_randoms=[]
-random.seed(5)
-
-for i in range (10):
-    my_randoms.append(random.randrange(1,10))
-
-print("Printing list of 10 random integers")
-print (my_randoms)
+import numpy as np
 
 
-randomFloatList = []
-random.seed(5)
+def generator_int_and_float(nums, sample_size):
+    data = []
+    for row in range(0, sample_size):
+        c = round(np.random.uniform(0, nums), 2)
+        data.append(c)
+    for i in range(0, sample_size):
+        inte = random.randint(1, nums)
+        data.append(inte)
+    sample = random.choices(data, k=sample_size)
+    return sample
 
-for i in range(0, 10):
-    x = round(random.uniform(1.0, 10.0), 2)
-    randomFloatList.append(x)
 
-print("Printing list of 10 random float numbers")
-print(randomFloatList)
+print(generator_int_and_float(2, 10))
