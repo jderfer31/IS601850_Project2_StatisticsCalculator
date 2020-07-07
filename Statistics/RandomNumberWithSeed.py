@@ -3,7 +3,7 @@ import numpy as np
 
 def random_integer(num):
     nlist = (range(1,10))
-    random.seed(3)
+    random.seed(5)
     number_list = random.sample(nlist, num)
     return("Random integer is", number_list)
 print(random_integer(1))
@@ -11,7 +11,7 @@ print(random_integer(1))
 
 def random_float(num):
     nlist = (np.arange(1.0, 10.0))
-    random.seed(6)
+    random.seed(5)
     ran_float = random.uniform(nlist, num)
     return("Random float is", ran_float)
 print(random_float(1.0))
