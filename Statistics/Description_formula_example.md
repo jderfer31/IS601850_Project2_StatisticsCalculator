@@ -98,4 +98,3 @@ This makes it easy to see which numbers appear most often.
 
 In this case the mode is 23.
 
-
