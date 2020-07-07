@@ -1,20 +1,17 @@
-import numpy as np
 import random
+import numpy as np
 
-data = []
+def random_integer(num):
+    nlist = (range(1,10))
+    number_list = random.sample(nlist, num)
+    return("Random integer is", number_list)
+print(random_integer(1))
 
-for row in range(0,10):
-    c = round(np.random.uniform(100,10),2)
-    data.append(c)
-print(data)
 
-X = random.randint(1,100)
-print(X)
 
-for i in range(0,10):
-    Inte = random.randint(1,100)
-    data.append(Inte)
-print(data)
 
-sample = random.choices(data, k=10)
-print(sample)
+def random_float(num):
+    nlist = (np.arange(1.0, 10.0))
+    ran_float = random.uniform(nlist, num)
+    return("Random float is", ran_float)
+print(random_float(1.0))
