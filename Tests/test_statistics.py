@@ -4,8 +4,6 @@ from numpy.random import randint
 from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 import ast
-from Statistics.Confidence_interval import confidence_interval_bottom
-from Statistics.Confidence_interval import result_confidence_interval_bottom_and_top
 import pprint
 
 
@@ -15,8 +13,6 @@ class MyTestCase(unittest.TestCase):
         self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
         self.x = 1
-        self.confidence_interval_bottom_and_top = confidence_interval_bottom(80, 10, 30)
-        self.result = result_confidence_interval_bottom_and_top(80, 10, 30)
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
