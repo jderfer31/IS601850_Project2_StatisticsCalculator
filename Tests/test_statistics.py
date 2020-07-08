@@ -17,7 +17,6 @@ class MyTestCase(unittest.TestCase):
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
-
     def test_mean_statistics(self):
         test_data_mean = CsvReader("Tests/Data/descriptive_stats.csv").data
         for row in test_data_mean:
