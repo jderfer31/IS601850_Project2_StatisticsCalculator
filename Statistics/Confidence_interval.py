@@ -1,19 +1,23 @@
-from Calculator.Calculator import Calculator as cal  # import Calculator
-from Statistics.Statistics import Statistics  # import Statistics funcions
+from Calculator.Subtraction import subtraction
+from Calculator.Division import division
+from Calculator.Multipule import mul
+from Calculator.Square_root import sqr
+from Statistics.Standard_Deviation import stddev
 from Statistics.NListWithSeed import generator_int_and_float
+from Statistics.Mean import mean
 import math  # import Calculator
 import statistics  # import Statistics funcions
 
 
-def confidence_interval_bottom_and_top(probability, range_s, numb):
-    num = generator_int_and_float(range_s, numb)  # should be imported as Random sample generator
+def confidence_interval_bottom(probability, range_s, numb):
+    num = generator_int_and_float(range_s, numb)
     num_values = len(num)
-    sd = Statistics.stddev(num)
-    avg = Statistics.mean(num)
+    sd = stddev(num)
+    avg = mean(num)
     p = probability
     if p == 80:
         z = 1.282
-        return round(cal.subtract(avg, cal.division(cal.mul(z, sd), cal.sqr(num_values))))
+        return round(subtraction(avg, division(mul(z, sd), sqr(num_values))), 5)
 
     elif p == 85:
         z = 1.440
@@ -37,7 +41,7 @@ def confidence_interval_bottom_and_top(probability, range_s, numb):
         print("please select one interval")
 
 
-print(confidence_interval_bottom_and_top(80, 10, 30))
+print(confidence_interval_bottom(80, 10, 30))
 
 
 def result_confidence_interval_bottom_and_top(probability, range_s, numb):
@@ -70,4 +74,3 @@ def result_confidence_interval_bottom_and_top(probability, range_s, numb):
         return round(avg - (z * sd / math.sqrt(num_values)), 5)
     else:
         print("please select one interval")
-
