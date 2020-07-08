@@ -1,8 +1,17 @@
 import random
+import numpy as np
 
-random.seed(3)
-print("Random integer between 1 and 10 is ", random.randint(1, 10))
+def random_integer(num):
+    nlist = (range(1,10))
+    random.seed(5)
+    number_list = random.sample(nlist, num)
+    return("Random integer is", number_list)
+print(random_integer(1))
 
-random.seed(6)
-x = random.uniform(1.0, 10.0)
-print("Random float number between range 1.0 to 10.0 is", x)
+
+def random_float(num):
+    nlist = (np.arange(1.0, 10.0))
+    random.seed(5)
+    ran_float = random.uniform(nlist, num)
+    return("Random float is", ran_float)
+print(random_float(1.0))
