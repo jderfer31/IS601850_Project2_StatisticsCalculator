@@ -12,6 +12,3 @@ def generator_int_and_float(nums, sample_size):
         data.append(inte)
     sample = random.choices(data, k=sample_size)
     return sample
-
-
-print(generator_int_and_float(2, 10))
