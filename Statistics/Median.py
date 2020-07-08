@@ -1,9 +1,10 @@
 from Calculator.Division import division
 from Calculator.Subtraction import subtraction
 from Statistics.Mean import mean
-
+from Statistics.check_emptylist import check
 
 def median(data):
+    data = check(data)
     if len(data) % 2 == 0:
         data.sort()
         middleindex1 = int(division(2, len(data)))
