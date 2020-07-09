@@ -126,7 +126,7 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_confidence_interval_bottom(self):
-        self.assertEqual(round(confidence_interval_bottom(80, self.sample),0), round(result_confidence_interval_bottom(80, self.sample),0))
+        self.assertEqual(round(confidence_interval_bottom(90, self.sample),1), round(result_confidence_interval_bottom(90 , self.sample),1))
 
     def test_Sample_random_Sampling(self):
         self.assertNotEqual(population(10, 30), generator_int_and_float(10, 30))
