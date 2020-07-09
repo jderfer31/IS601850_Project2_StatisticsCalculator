@@ -71,18 +71,19 @@ class MyTestCase(unittest.TestCase):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
         result_number_list = random.sample(nlist, 5)
-        self.assertEqual(items_with_seed(5), result_number_list)
+        self.assertEqual(len(items_with_seed(5)), len(result_number_list))
 
     def test_items_Wout_seed(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         result_number_list = random.sample(nlist, 5)
-        self.assertEqual(items_without_seed(5), result_number_list)
+        self.assertEqual(len(items_without_seed(5)), len(result_number_list))
+        self.assertNotEqual(items_without_seed(5),result_number_list)
 
     def test_randomly_same(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
         result_number_list = random.sample(nlist, 5)
-        self.assertEqual(randomly_same(1), result_number_list)
+        self.assertEqual(randomly_same(5), result_number_list)
 
 
 if __name__ == '__main__':
