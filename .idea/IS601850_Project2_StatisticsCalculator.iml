@@ -6,7 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Tests/Data" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
+Branch_Jeremy
+    <orderEntry type="jdk" jdkName="Python 3.6.0rc1 (C:\Users\Jeremy Langenderfer\AppData\Local\Programs\Python\Python36\python.exe)" jdkType="Python SDK" />
+
     <orderEntry type="jdk" jdkName="Remote Python 3.7.7 Docker (cslocal:latest)" jdkType="Python SDK" />
+master
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
