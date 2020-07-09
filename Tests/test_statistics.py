@@ -1,14 +1,19 @@
 import unittest
 import random
+import numpy as np
 from numpy.random import seed
 from numpy.random import randint
+
+from Statistics.ItemsWithSeed import items_with_seed
+from Statistics.RandomItem import random_item
+from Statistics.RandomNumberWithSeed import random_integer, random_float
+from Statistics.RandomlySelectSame import randomly_same
 from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 import ast
 import pprint
 
-from ItemsWithSeed import items_with_seed
-from RandomlySelectSame import randomly_same
+
 
 
 def items_Wout_seed():
@@ -85,6 +90,25 @@ class MyTestCase(unittest.TestCase):
         random.seed(5)
         number_list = random.sample(nlist, self)
         self.assertEqual(randomly_same(1), self)
+
+    def random_item(self):
+        nList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        result_numbered_list = random.sample(nList, 5)
+        self.assertEqual(len(random_item(5)), len(result_numbered_list))
+
+    def random_integer(self):
+        nlist = (range(1, 10))
+        random.seed(5)
+        result_number_list = random.sample(nlist, 5)
+        self.assertEqual(len(random_integer(5)), len(result_number_list))
+
+
+    def random_float(self):
+        nlist = (np.arange(1.0, 10.0))
+        random.seed(5)
+        result_ran_float = random.uniform(nlist, 5)
+        self.assertEqual(len(random_float(5)), len(result_ran_float))
+
 
 
 
