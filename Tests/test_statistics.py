@@ -1,4 +1,5 @@
 import unittest
+import random
 from numpy.random import seed
 from numpy.random import randint
 from Statistics.Statistics import Statistics
@@ -60,6 +61,30 @@ class MyTestCase(unittest.TestCase):
             input_data, x = ast.literal_eval(row['input']), ast.literal_eval(row['x'])
             self.assertEqual(round(self.statistics.zscore(input_data, x), 2),  round(float(row['result']), 2))
             self.assertEqual(round(self.statistics.result, 2),  round(float(row['result']), 2))
+
+
+
+    def test_items_with_seed(self):
+        random.seed(5)
+        number_list = random.sample(nlist, num)
+        num = random.randint(0, 10)
+        self.assertEqual(items_with_seed(), num)
+
+    def test_items_Wout_seed(self):
+        number_list = random.sample(nlist, num)
+        num = random.randint(0, 10)
+        self.assertEqual(items_Wout_seed(), num)
+
+    def test_randomly_same(self):
+        random.seed(5)
+        number_list = random.sample(nlist, num)
+        num = random.randint(0, 10)
+        self.assertEqual(randomly_same(1), num)
+
+
+
+
+
 
 
 
