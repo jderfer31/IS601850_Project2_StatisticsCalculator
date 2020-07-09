@@ -13,11 +13,15 @@ from CsvReader.CsvReader import CsvReader
 import ast
 import pprint
 
+Branch_Jeremy
 
 
+from Statistics.ItemsWithSeed import items_with_seed
+from Statistics.RandomlySelectSame import randomly_same
+from Statistics.ItemsWoutSeed import items_without_seed
+master
 
-def items_Wout_seed():
-    pass
+
 
 
 class MyTestCase(unittest.TestCase):
@@ -73,21 +77,22 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(round(self.statistics.zscore(input_data, x), 2), round(float(row['result']), 2))
             self.assertEqual(round(self.statistics.result, 2), round(float(row['result']), 2))
 
-
     def test_items_with_seed(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
-        number_list = random.sample(nlist, self)
-        self.assertEqual(items_with_seed(), self)
+        result_number_list = random.sample(nlist, 5)
+        self.assertEqual(len(items_with_seed(5)), len(result_number_list))
 
     def test_items_Wout_seed(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        number_list = random.sample(nlist, self)
-        self.assertEqual(items_Wout_seed(), self)
+        result_number_list = random.sample(nlist, 5)
+        self.assertEqual(len(items_without_seed(5)), len(result_number_list))
+        self.assertNotEqual(items_without_seed(5),result_number_list)
 
     def test_randomly_same(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
+Branch_Jeremy
         number_list = random.sample(nlist, self)
         self.assertEqual(randomly_same(1), self)
 
@@ -117,6 +122,10 @@ class MyTestCase(unittest.TestCase):
 
 
 
+
+        result_number_list = random.sample(nlist, 5)
+        self.assertEqual(randomly_same(5), result_number_list)
+master
 
 
 if __name__ == '__main__':

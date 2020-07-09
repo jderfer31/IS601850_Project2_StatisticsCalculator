@@ -1,3 +1,8 @@
 def division(a, b):
-    c = float(b) / float(a)
-    return c
+    try:
+        c = float(b) / float(a)
+        return c
+    except ZeroDivisionError as err:
+        raise err
+
+
