@@ -15,25 +15,25 @@ def margin_error2(probability, data):
     p = probability
     if p == 80:
         z = 1.282
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     elif p == 85:
         z = 1.440
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     elif p == 90:
         z = 1.645
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     elif p == 95:
         z = 1.960
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     elif p == 99:
         z = 2.576
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     elif p == 99.5:
         z = 2.807
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     elif p == 99.9:
         z = 3.291
-        return round(division(sqr(num_values), mul(z, sd)), 5)
+        return round(division(sqr(num_values), mul(z, sd)), 1)
     else:
         print("please select one interval")
 
@@ -48,25 +48,25 @@ def result_margin_error2(probability, data):
     p = probability
     if p == 80:
         z = 1.282
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     elif p == 85:
         z = 1.440
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     elif p == 90:
         z = 1.645
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     elif p == 95:
         z = 1.960
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     elif p == 99:
         z = 2.576
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     elif p == 99.5:
         z = 2.807
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     elif p == 99.9:
         z = 3.291
-        return round(z * sd / math.sqrt(num_values), 5)
+        return round(z * sd / math.sqrt(num_values), 1)
     else:
         print("please select one interval")
 
