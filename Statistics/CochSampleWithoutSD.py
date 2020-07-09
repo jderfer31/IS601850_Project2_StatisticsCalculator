@@ -1,14 +1,6 @@
-from Calculator.Subtraction import subtraction
 from Calculator.Division import division
 from Calculator.Multipule import mul
 from Calculator.Square import sq
-from Statistics.Standard_Deviation import stddev
-from Statistics.NListWithSeed import generator_int_and_float
-from Statistics.Mean import mean
-import math  # import Calculator
-import statistics  # import Statistics funcions
-import math  # import Calculator
-import statistics  # import Statistics funcions
 
 
 def cochranwithNOsd(proportion, probability, precision):
