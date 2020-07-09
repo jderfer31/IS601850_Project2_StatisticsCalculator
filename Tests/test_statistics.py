@@ -18,7 +18,6 @@ class MyTestCase(unittest.TestCase):
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
-
     def test_mean_statistics(self):
         test_data_mean = CsvReader("Tests/Data/descriptive_stats.csv").data
         for row in test_data_mean:
@@ -59,9 +58,8 @@ class MyTestCase(unittest.TestCase):
         test_data_zscore = CsvReader("Tests/Data/zscore.csv").data
         for row in test_data_zscore:
             input_data, x = ast.literal_eval(row['input']), ast.literal_eval(row['x'])
-            self.assertEqual(round(self.statistics.zscore(input_data, x), 2),  round(float(row['result']), 2))
-            self.assertEqual(round(self.statistics.result, 2),  round(float(row['result']), 2))
-
+            self.assertEqual(round(self.statistics.zscore(input_data, x), 2), round(float(row['result']), 2))
+            self.assertEqual(round(self.statistics.result, 2), round(float(row['result']), 2))
 
 
     def test_items_with_seed(self):
