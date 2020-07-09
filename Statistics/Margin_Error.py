@@ -5,10 +5,11 @@ from Statistics.Standard_Deviation import stddev
 from Statistics.NListWithSeed import generator_int_and_float
 import math  # import Calculator
 import statistics  # import Statistics funcions
+sample = generator_int_and_float(10, 30)
 
 
-def margin_error2(probability, range_s, numb):
-    num = generator_int_and_float(range_s, numb)  # should be imported as Random sample generator
+def margin_error2(probability, data):
+    num = data  # should be imported as Random sample generator
     num_values = len(num)
     sd = stddev(num)
     p = probability
@@ -37,11 +38,11 @@ def margin_error2(probability, range_s, numb):
         print("please select one interval")
 
 
-print(margin_error2(99.9, 10, 35))
+print(margin_error2(99.9, sample))
 
 
-def result_margin_error2(probability, range_s, numb):
-    num = generator_int_and_float(range_s, numb)  # should be imported as Random sample generator
+def result_margin_error2(probability, data):
+    num = data  # should be imported as Random sample generator
     num_values = len(num)
     sd = statistics.stdev(num)
     p = probability
@@ -70,4 +71,4 @@ def result_margin_error2(probability, range_s, numb):
         print("please select one interval")
 
 
-print(margin_error2(99.9, 10, 35))
+print(margin_error2(99.9, sample))

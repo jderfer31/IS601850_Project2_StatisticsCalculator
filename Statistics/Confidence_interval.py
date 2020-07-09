@@ -8,9 +8,11 @@ from Statistics.Mean import mean
 import math
 import statistics
 
+sample = generator_int_and_float(10, 35)
 
-def confidence_interval_bottom(probability, range_s, numb):
-    num = generator_int_and_float(range_s, numb)
+
+def confidence_interval_bottom(probability, data):
+    num = data
     num_values = len(num)
     sd = stddev(num)
     avg = mean(num)
@@ -41,8 +43,8 @@ def confidence_interval_bottom(probability, range_s, numb):
         print("please select one interval")
 
 
-def result_confidence_interval_bottom_and_top(probability, range_s, numb):
-    num = generator_int_and_float(range_s, numb)  # should be imported as Random sample generator
+def result_confidence_interval_bottom(probability, data):
+    num = data  # should be imported as Random sample generator
     num_values = len(num)
     sd = statistics.stdev(num)
     avg = statistics.mean(num)
