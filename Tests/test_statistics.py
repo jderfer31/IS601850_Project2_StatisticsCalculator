@@ -11,7 +11,6 @@ from Statistics.RandomlySelectSame import randomly_same
 from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 import ast
-master
 from Statistics.ItemsWithSeed import items_with_seed
 from Statistics.RandomlySelectSame import randomly_same
 from Statistics.ItemsWoutSeed import items_without_seed
@@ -25,15 +24,12 @@ from Statistics.Cochran_Sample_Size import cochran
 from Statistics.Cochran_Sample_Size import result_cochran
 from Statistics.CochSampleWithoutSD import cochranwithNOsd
 from Statistics.CochSampleWithoutSD import result_cochranwithNOsd
-
 import pprint
-
-Branch_Jeremy
-
 
 from Statistics.ItemsWithSeed import items_with_seed
 from Statistics.RandomlySelectSame import randomly_same
 from Statistics.ItemsWoutSeed import items_without_seed
+
 
 
 
@@ -106,8 +102,8 @@ class MyTestCase(unittest.TestCase):
     def test_randomly_same(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
-        number_list = random.sample(nlist, self)
-        self.assertEqual(randomly_same(1), self)
+        number_list = random.sample(nlist,1)
+        self.assertEqual(randomly_same(1), number_list)
 
     def random_item(self):
         nList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -128,8 +124,9 @@ class MyTestCase(unittest.TestCase):
         result_number_list = random.sample(nlist, 5)
         self.assertEqual(randomly_same(5), result_number_list)
 
+
     def test_confidence_interval_bottom(self):
-        self.assertEqual(confidence_interval_bottom(80, self.sample), result_confidence_interval_bottom(80, self.sample))
+        self.assertEqual(round(confidence_interval_bottom(90, self.sample),1), round(result_confidence_interval_bottom(90 , self.sample),1))
 
     def test_Sample_random_Sampling(self):
         self.assertNotEqual(population(10, 30), generator_int_and_float(10, 30))

@@ -16,13 +16,13 @@ class MyTestCase(unittest.TestCase):
         self.sample = generator_int_and_float(10, 35)
 
     def test_confidence_interval_bottom(self):
-        self.assertEqual(confidence_interval_bottom(80, self.sample), result_confidence_interval_bottom(80, self.sample))
+        self.assertEqual(round(confidence_interval_bottom(90, self.sample),1), round(result_confidence_interval_bottom(90 , self.sample),1))
 
     def test_Sample_random_Sampling(self):
         self.assertNotEqual(population(10, 30), generator_int_and_float(10, 30))
 
     def test_margin_error(self):
-        self.assertEqual(margin_error2(99.9, self.sample), result_margin_error2(99.9, self.sample))
+        self.assertEqual(round(margin_error2(99.9, self.sample),1), round(result_margin_error2(99.9, self.sample),1))
 
     def test_Cochran_Sample_Size(self):
         self.assertEqual(cochran(50, 95, 0.05), result_cochran(50, 95, 0.05))

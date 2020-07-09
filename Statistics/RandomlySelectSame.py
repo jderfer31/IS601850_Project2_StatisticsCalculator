@@ -8,4 +8,3 @@ def randomly_same(num):
     return number_list
 
 
-print(randomly_same(1))

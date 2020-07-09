@@ -21,7 +21,7 @@ Contributors: Payal Kevin Bhalala, Chinghao Sun and Jeremy Langenderfer
   6. Square root
   
  # Statistics Functions
- [StatisticsFunctions](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/tree/master/Statistics)
+ [StatisticsFunctions](https://github.com/jderfer31/IS601850_Project2_StatisticsCalculator/tree/master/Statistics/Description_formula_example.md)
  
   1. Mean
   2. Median

@@ -172,3 +172,13 @@ Assuming a normal distribution, your z score would be:
 The z score tells you how many standard deviations from the mean your score is. In this example, your score is 1.6 standard deviations above the mean.
 
 
+## Random Generators
+
+Random Generators contains many different methods that are intended to produce results in various ways depending upon user's usecase. All random generators methods with seed functionality are intended to hold the random state and can reproduce same result if same seed is provided. However, methods without seed will be completely random and will not allow user to reproduce same result another time.
+
+The first two random methods produces random number between the range of two numbers. The third method generate a list of N random numbers with a seed and between a range of numbers. The 4th and 5th selects random number from list. Finally, the 6th and 7th methods selects N random number from given list.
+
+
+
+
+
