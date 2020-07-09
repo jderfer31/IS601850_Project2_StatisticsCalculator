@@ -33,8 +33,8 @@ class MyTestCase(unittest.TestCase):
     def test_divide_method_calculator(self):
         test_data_divide = CsvReader('Tests/Data/Division.csv').data
         for row in test_data_divide:
-            self.assertEqual(round(self.calculator.division(row['Value 1'], row['Value 2']),2), round(float(row['Result']),2))
-            self.assertEqual(round(self.calculator.result,2), round(float(row['Result']),2))
+            self.assertEqual(round(self.calculator.division(row['Value 1'], row['Value 2']), 2), round(float(row['Result']), 2))
+            self.assertEqual(round(self.calculator.result, 2), round(float(row['Result']), 2))
 
     def test_square_method_calculator(self):
         test_data_square = CsvReader('Tests/Data/Square.csv').data
