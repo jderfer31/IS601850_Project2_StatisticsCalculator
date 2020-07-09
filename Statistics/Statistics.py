@@ -1,45 +1,32 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
-from Statistics.ItemsWithSeed import ItemsWithSeed
-from Statistics.ItemsWoutSeed import ItemsWoutSeed
-from Statistics.NListWithSeed import NListWithSeed
-from Statistics.RandomItem import RandomItem
-from Statistics.RandomlySelectSame import RandomlySelectSame
-from Statistics.RandomNumberWithSeed import RandomNumberWithSeed
-from Statistics.RandomNumberWoutSeed import RandomNumberWoutSeed
+from Statistics.Median import median
+from Statistics.Mode import mode
+from Statistics.Variance import variance
+from Statistics.Standard_Deviation import stddev
+from Statistics.Zscore import zscore
 
 class Statistics(Calculator):
 
     def mean(self, data):
         self.result = mean(data)
         return self.result
-
-    def itemswithseed(self, data):
-        self.result = self.itemswithseed(data)
+    def median(self, data):
+        self.result = median(data)
+        return self.result
+    def mode(self, data):
+        self.result = mode(data)
+        return self.result
+    def variance(self, data):
+        self.result = variance(data)
+        return self.result
+    def stddev(self, data):
+        self.result = stddev(data)
         return self.result
 
-    def itemswoutseed(self, data):
-        self.result = self.itemswoutseed(data)
+    def zscore(self, data, x):
+        self.result = zscore(data, x)
         return self.result
 
-    def nlistwithseed(self, data):
-        self.result = self.nlistwithseed(data)
-        return self.result
-
-    def randomitem(self, data):
-        self.result = self.randomitem(data)
-        return self.result
-
-    def randomlyselectsame(self, data):
-        self.result = self.randomlyselectsame(data)
-        return self.result
-
-    def randomnumberwithseed(self, data):
-        self.result = self.randomnumberwithseed(data)
-        return self.result
-
-    def randomnumberwoutseed(self, data):
-        self.result = self.randomnumberwoutseed(data)
-        return self.result
 
 

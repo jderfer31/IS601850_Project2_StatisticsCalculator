@@ -1,9 +1,9 @@
-from Addition import addition
-from Division import division
-from Multipule import mul
-from Subtraction import subtraction
-from Square import sq
-from Square_root import sqr
+from Calculator.Addition import addition
+from Calculator.Division import division
+from Calculator.Multipule import mul
+from Calculator.Subtraction import subtraction
+from Calculator.Square import sq
+from Calculator.Square_root import sqr
 
 
 class Calculator:
