@@ -109,7 +109,6 @@ class MyTestCase(unittest.TestCase):
     def test_randomly_same(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
-Branch_Jeremy
         number_list = random.sample(nlist, self)
         self.assertEqual(randomly_same(1), self)
 
