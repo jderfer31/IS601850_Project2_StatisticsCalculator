@@ -30,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         random.seed(5)
         number_list = random.sample(nlist, self)
-        self.assertEqual(items_with_seed(), num)
+        self.assertEqual(items_with_seed(), self)
 
     def test_items_Wout_seed(self):
         nlist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -43,8 +43,6 @@ class MyTestCase(unittest.TestCase):
         number_list = random.sample(nlist, self)
         self.assertEqual(randomly_same(1), self)
 
-
-        
 
 
 
