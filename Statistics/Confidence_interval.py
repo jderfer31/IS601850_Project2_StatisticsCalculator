@@ -21,7 +21,7 @@ def confidence_interval_bottom(probability, range_s, numb):
 
     elif p == 85:
         z = 1.440
-        return round(avg - (z * sd / math.sqrt(num_values)), 5)
+        return round(subtraction(avg, division(mul(z, sd), sqr(num_values))), 5)
     elif p == 90:
         z = 1.645
         return round(avg - (z * sd / math.sqrt(num_values)), 5)
@@ -39,9 +39,6 @@ def confidence_interval_bottom(probability, range_s, numb):
         return round(avg - (z * sd / math.sqrt(num_values)), 5)
     else:
         print("please select one interval")
-
-
-print(confidence_interval_bottom(80, 10, 30))
 
 
 def result_confidence_interval_bottom_and_top(probability, range_s, numb):
