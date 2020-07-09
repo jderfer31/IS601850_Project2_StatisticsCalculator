@@ -3,16 +3,14 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Calculator" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CsvReader" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Dectorators" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Fileutilities" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Statistics" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tests/Data" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/.idea" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
+Branch_Jeremy
     <orderEntry type="jdk" jdkName="Python 3.6.0rc1 (C:\Users\Jeremy Langenderfer\AppData\Local\Programs\Python\Python36\python.exe)" jdkType="Python SDK" />
+
+    <orderEntry type="jdk" jdkName="Remote Python 3.7.7 Docker (cslocal:latest)" jdkType="Python SDK" />
+master
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

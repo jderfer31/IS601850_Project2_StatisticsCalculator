@@ -1,2 +1,3 @@
 def sqr(a):
-    return int(a)**(1/2)
+    # I think we should remove int
+    return float(a) ** (1 / 2)
