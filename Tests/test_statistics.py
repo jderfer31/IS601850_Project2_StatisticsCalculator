@@ -34,9 +34,6 @@ Branch_Jeremy
 from Statistics.ItemsWithSeed import items_with_seed
 from Statistics.RandomlySelectSame import randomly_same
 from Statistics.ItemsWoutSeed import items_without_seed
-master
-
-master
 
 
 
@@ -123,7 +120,6 @@ class MyTestCase(unittest.TestCase):
         result_number_list = random.sample(nlist, 5)
         self.assertEqual(len(random_integer(5)), len(result_number_list))
 
-
     def random_float(self):
         nlist = (np.arange(1.0, 10.0))
         random.seed(5)
@@ -131,7 +127,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(len(random_float(5)), len(result_ran_float))
         result_number_list = random.sample(nlist, 5)
         self.assertEqual(randomly_same(5), result_number_list)
-master
 
     def test_confidence_interval_bottom(self):
         self.assertEqual(confidence_interval_bottom(80, self.sample), result_confidence_interval_bottom(80, self.sample))
