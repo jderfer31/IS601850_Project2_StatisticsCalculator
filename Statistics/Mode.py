@@ -1,4 +1,6 @@
+from Statistics.check_emptylist import check
 def mode(data):
+    data = check(data)
     dict = {}
     for val in data:
         if dict.get(val) is None:
