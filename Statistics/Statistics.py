@@ -92,9 +92,8 @@ class Statistics(Calculator):
 
     def c_interval_bottom(self,probability, data):
         self.result = confidence_interval_bottom(probability,data)
-
         return self.result
-master
+
 
     def me(self,probability, data):
         self.result = margin_error2(probability,data)
