@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         self.assertNotEqual(population(10, 30), generator_int_and_float(10, 30))
 
     def test_margin_error(self):
-        self.assertEqual(margin_error2(99.9, self.sample), result_margin_error2(99.9, self.sample))
+        self.assertEqual(round(margin_error2(99.9, self.sample),1), round(result_margin_error2(99.9, self.sample),1))
 
     def test_Cochran_Sample_Size(self):
         self.assertEqual(cochran(50, 95, 0.05), result_cochran(50, 95, 0.05))
