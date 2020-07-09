@@ -116,7 +116,6 @@ class MyTestCase(unittest.TestCase):
         result_number_list = random.sample(nlist, 5)
         self.assertEqual(len(random_integer(5)), len(result_number_list))
 
-
     def random_float(self):
         nlist = (np.arange(1.0, 10.0))
         random.seed(5)
