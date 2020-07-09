@@ -7,12 +7,11 @@ from CsvReader.CsvReader import CsvReader
 import ast
 import pprint
 
-from ItemsWithSeed import items_with_seed
-from RandomlySelectSame import randomly_same
+from Statistics.ItemsWithSeed import items_with_seed
+from Statistics.RandomlySelectSame import randomly_same
+from Statistics.ItemsWoutSeed import items_without_seed
 
 
-def items_Wout_seed():
-    pass
 
 
 class MyTestCase(unittest.TestCase):
