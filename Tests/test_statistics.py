@@ -129,16 +129,6 @@ class MyTestCase(unittest.TestCase):
         random.seed(5)
         result_ran_float = random.uniform(nlist, 5)
         self.assertEqual(len(random_float(5)), len(result_ran_float))
-
-
-
-
-
-
-
-
-
-
         result_number_list = random.sample(nlist, 5)
         self.assertEqual(randomly_same(5), result_number_list)
 master
